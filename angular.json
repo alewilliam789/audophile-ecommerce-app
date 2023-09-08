@@ -32,6 +32,11 @@
             "styles": [
               "src/styles.scss"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "src/scss/abstracts"
+              ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -100,5 +105,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a35c2756-8e8f-482e-af74-c8d15efe8596"
   }
 }

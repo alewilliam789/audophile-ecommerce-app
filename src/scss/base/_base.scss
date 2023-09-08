@@ -1,0 +1,43 @@
+html, body {
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    min-height: fit-content;
+    min-width: fit-content;
+}
+
+
+body {
+    background: var(--theme-color1)
+}
+
+p, a {
+    line-height: 25px;
+}
+
+p {
+    color: var(--theme-color4);
+    margin: 0px 0px;
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--theme-color1);
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+sub {
+    color: var(--theme-color4);
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 25px;
+}
