@@ -1,1 +1,5 @@
-<p>navbar works!</p>
+<nav [ngClass]="['c-navbar', 'l-flex']">
+    <ng-container *ngFor="let link of links">
+        <a routerLink="{{'../'+ link | lowercase}}">{{link}}</a>
+    </ng-container>
+</nav>
