@@ -1,5 +1,28 @@
 @use './src/scss/abstracts/mixins' as *;
 
+
+:host {
+        justify-self: end;
+        align-self: start;
+
+        @include media-query(tablet){
+            margin-bottom: 32px;
+        }
+    
+        @include media-query(mobile){
+            margin-bottom: 0px;
+        }
+
+
+        @include media-query(tablet){
+            justify-self: start;
+        }
+
+        @include media-query(mobile){
+            justify-self: center;
+        }
+}
+
 .c-navbar {
     width: 429px;
 
