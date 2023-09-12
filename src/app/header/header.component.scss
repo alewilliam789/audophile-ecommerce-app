@@ -12,6 +12,12 @@
     width: var(--content-width);
 }
 
+.c-header__mobile-menu {
+    @include media-query(desktop){
+        display: none;
+    }
+}
+
 .l-flex {
     @include flex;
     justify-content: center;
@@ -31,13 +37,23 @@
     }
 }
 
-.l-grid__item {
+.l-grid__item--start {
     justify-self: start;
     @include flex;
     gap: 34px;
 
     @include media-query(mobile){
         gap: 76px;
+    }
+}
+
+.l-grid__item--center {
+    @include media-query(mobile){
+        display: none;
+    }
+
+    @include media-query(tablet){
+        display: none;
     }
 }
 

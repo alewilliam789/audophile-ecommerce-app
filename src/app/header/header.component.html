@@ -1,4 +1,12 @@
 <header [ngClass]="['c-header', 'l-flex']">
-<img src="assets/shared/desktop/icon-car.svg"/>
-
+    <div [ngClass]="['c-header__content', 'l-grid']">
+        <div [ngClass]="['l-grid__item--start']">
+            <img [ngClass]="['c-header__mobile-menu']" src="assets/shared/tablet/menu.svg">
+            <img src="assets/shared/desktop/logo.svg">
+        </div>
+        <div [ngClass]="['l-grid__item--center']">
+        <app-navbar></app-navbar>
+        </div>
+        <img [ngClass]="['l-grid__item--end']" src="assets/shared/desktop/icon-cart.svg">
+    </div>
 </header>
