@@ -10,6 +10,7 @@ import { NavbarComponent } from './header/navbar/navbar.component';
 import { HeadphonesComponent } from './headphones/headphones.component';
 import { EarphonesComponent } from './earphones/earphones.component';
 import { SpeakersComponent } from './speakers/speakers.component';
+import { SocialMediaLinksComponent } from './footer/social-media-links/social-media-links.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SpeakersComponent } from './speakers/speakers.component';
     NavbarComponent,
     HeadphonesComponent,
     EarphonesComponent,
-    SpeakersComponent
+    SpeakersComponent,
+    SocialMediaLinksComponent
   ],
   imports: [
     BrowserModule,

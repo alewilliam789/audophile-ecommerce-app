@@ -1,0 +1,17 @@
+@use './src/scss/abstracts/mixins' as *;
+
+
+.l-flex--social-links {
+    @include flex;
+    gap: 16px;
+}
+
+.l-grid__item--social-links {
+    align-self: end;
+    justify-self: end;
+
+    @include media-query(mobile){
+        justify-self: center;
+        align-self: center;
+    }
+}
