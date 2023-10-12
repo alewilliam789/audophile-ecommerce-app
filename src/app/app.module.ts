@@ -4,23 +4,25 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { NavbarComponent } from './header/navbar/navbar.component';
 import { HeadphonesComponent } from './headphones/headphones.component';
 import { EarphonesComponent } from './earphones/earphones.component';
 import { SpeakersComponent } from './speakers/speakers.component';
-import { SocialMediaLinksComponent } from './footer/social-media-links/social-media-links.component';
+import { HomeComponent } from './home/home.component';
+import { NavbarComponent } from './shared/header/navbar/navbar.component';
+import { SocialMediaLinksComponent } from './shared/footer/social-media-links/social-media-links.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    NavbarComponent,
     HeadphonesComponent,
     EarphonesComponent,
     SpeakersComponent,
+    HomeComponent,
+    HeaderComponent,
+    FooterComponent,
+    NavbarComponent,
     SocialMediaLinksComponent
   ],
   imports: [

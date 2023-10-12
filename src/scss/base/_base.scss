@@ -33,6 +33,11 @@ p {
     margin: 0px 0px;
 }
 
+h1,h2,h3,h4,h5, h6 {
+    margin: 0px 0px;
+    padding: 0px 0px;
+}
+
 
 a {
     text-decoration: none;
@@ -47,4 +52,10 @@ sub {
     font-size: 15px;
     font-weight: bold;
     line-height: 25px;
+}
+
+.p--overline {
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: capitalize;
 }
