@@ -1,0 +1,17 @@
+@use './src/scss/abstracts/mixins' as *;
+
+
+.c-dot-selector {
+    height: 15px;
+    width: 15px;
+    margin-top: 20px;
+    border-radius: 50%;
+    background-color: var(--theme-color4);
+    display: inline-block;
+}
+
+.l-flex {
+    @include flex;
+    gap: 20px;
+}
+

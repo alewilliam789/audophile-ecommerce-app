@@ -1,0 +1,14 @@
+<div [ngClass]="['c-product-highlight', 'c-product-highlight--primary']">
+    <div [ngClass]="['c-product-highlight__content', 'l-flex__main']">
+    <aside [ngClass]="['c-product-highlight__description']">
+        <div [ngClass]="['l-flex__aside']">
+            <p [innerText]=" currentHighlight ? currentHighlight.subtitle : ''"></p>
+            <h1 [innerText]="currentHighlight ? currentHighlight.headline :''"></h1>
+            <p>{{currentHighlight ? currentHighlight.description : ''}}</p>
+        </div>
+        <app-product-slider></app-product-slider>
+        <!-- <app-button buttonStyle="c-button--primary">SEE MORE</app-button> -->
+    </aside>
+    <img [ngClass]= "['c-product-highlight__image']" [src]="currentHighlight ? currentHighlight.productImg : ''" height="500px">
+    </div> 
+</div>

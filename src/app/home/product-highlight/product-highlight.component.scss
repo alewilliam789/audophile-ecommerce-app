@@ -1,0 +1,45 @@
+@use './src/scss/abstracts/mixins' as *;
+
+
+.c-product-highlight {
+    height: 637px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right bottom 5px;
+    background-blend-mode: normal;
+}
+
+.c-product-highlight__content {
+    width: var(--content-width);
+    padding-top: 128px;
+    margin: 0px auto;
+    border-top: 1px solid #979797;
+}
+
+
+
+.c-product-highlight--primary {
+    background-color: black;
+}
+
+.c-product-highlight__description {
+    width: 398px;
+    height: 346px;
+}
+
+.c-product-highlight__image {
+    border-radius: 100px;
+}
+
+
+.l-flex__aside {
+    @include flex-column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.l-flex__main {
+    @include flex;
+    justify-content: space-between;
+}
