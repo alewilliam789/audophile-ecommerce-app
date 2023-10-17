@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +13,10 @@ import { NavbarComponent } from './shared/header/navbar/navbar.component';
 import { SocialMediaLinksComponent } from './shared/footer/social-media-links/social-media-links.component';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
+import { ProductSliderComponent } from './home/product-highlight/product-slider/product-slider.component';
+import { ButtonComponent } from './shared/button/button.component';
+import { ProductHighlightComponent } from './home/product-highlight/product-highlight.component';
+import { SliderHighlightDirective } from './home/product-highlight/product-slider/slider-highlight.directive';
 
 @NgModule({
   declarations: [
@@ -23,11 +28,16 @@ import { FooterComponent } from './shared/footer/footer.component';
     HeaderComponent,
     FooterComponent,
     NavbarComponent,
-    SocialMediaLinksComponent
+    SocialMediaLinksComponent,
+    ProductSliderComponent,
+    ButtonComponent,
+    ProductHighlightComponent,
+    SliderHighlightDirective
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
