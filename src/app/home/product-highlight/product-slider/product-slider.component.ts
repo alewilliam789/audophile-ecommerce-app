@@ -1,5 +1,6 @@
 import { Component, ElementRef, HostListener, Input } from '@angular/core';
 import { SliderService } from '../slider.service';
+import { ProductHighlight } from 'src/app/api/product-highlights/product-highlights.service';
 
 
 export interface Product {
@@ -15,7 +16,7 @@ export interface Product {
 })
 export class ProductSliderComponent {
 
-  @Input() highlightArray?: Product[];
+  @Input() highlightArray?: ProductHighlight[];
 
   constructor(private sliderService: SliderService){}
 

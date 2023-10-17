@@ -6,7 +6,7 @@
             <h1 [innerText]="currentHighlight ? currentHighlight.headline :''"></h1>
             <p>{{currentHighlight ? currentHighlight.description : ''}}</p>
         </div>
-        <app-product-slider></app-product-slider>
+        <app-product-slider [highlightArray]="productHighlights"></app-product-slider>
         <!-- <app-button buttonStyle="c-button--primary">SEE MORE</app-button> -->
     </aside>
     <img [ngClass]= "['c-product-highlight__image']" [src]="currentHighlight ? currentHighlight.productImg : ''" height="500px">

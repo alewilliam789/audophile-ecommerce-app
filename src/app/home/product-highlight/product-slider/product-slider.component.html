@@ -1,10 +1,4 @@
 <div [ngClass]="['l-flex']">
-    <span appSliderHighlight [ngClass]="['c-dot-selector']" [attr.data-id]="1" (click)="selectDot($event)">
-    </span>
-    <span appSliderHighlight [ngClass]="['c-dot-selector']" [attr.data-id]="2" (click)="selectDot($event)">
-    </span>
-    <span appSliderHighlight [ngClass]="['c-dot-selector']" [attr.data-id]="3" (click)="selectDot($event)">
-    </span>
-    <span appSliderHighlight [ngClass]="['c-dot-selector']" [attr.data-id]="4" (click)="selectDot($event)">
+    <span appSliderHighlight *ngFor="let highlight of highlightArray; index as i" [ngClass]="['c-dot-selector']" [attr.data-id]="i+1" (click)="selectDot($event)">
     </span>
 </div>
