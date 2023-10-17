@@ -1,0 +1,22 @@
+[{
+    "id" : 0,
+    "headline": "XX99 MARK II",
+    "description": "Experience natural, lifelike audio and exceptional build quality made for the passionate music enthusiast.",
+    "subtitle": "NEW PRODUCT",
+    "productImg":"/assets/product-xx99-mark-two-headphones/desktop/image-category-page-preview.jpg"
+},
+{
+    "id" : 1,
+    "headline": "XX99 MARK I",
+    "description": "Even though the Mark I has aged a bit, unlike others it ages like fine wine for the ears.",
+    "subtitle": "CLASSIC",
+    "productImg":"/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview.jpg"
+},
+{
+    "id": 2,
+    "headline": "XX59",
+    "description" : "Ehh not as fancy-schmansy, but still power packed to bring deafness to your ears.",
+    "subtitle": "COMPACT",
+    "productImg": "/assets/product-xx59-headphones/desktop/image-category-page-preview.jpg"
+}
+]
